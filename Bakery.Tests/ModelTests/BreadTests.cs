@@ -33,7 +33,11 @@ namespace Bakery.Tests
         newBread.InputNum = userInput2;
         Assert.AreEqual(newBread.InputNum, userInput2);
     }
-    
+    // [TestMethod]
+    // public void CalculateBreadCost_ReturnsBreadCost_Int()
+    // {
+
+    // }
 
   }
 }
