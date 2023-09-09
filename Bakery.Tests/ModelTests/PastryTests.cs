@@ -24,14 +24,14 @@ namespace Bakery.Tests
         Assert.AreEqual(newPastry.InputNum, userInput);
     }
 
-    // [TestMethod]
-    // public void SetInputNum_ReturnsUserChoice_Int()
-    // {
-    //     int userInput = 3;
-    //     Pastry newPastry = new Pastry(userInput);
-    //     int userInput2 = 5;
-    //     newPastry.InputNum = userInput2;
-    //     Assert.AreEqual(newPastry.InputNum, userInput2);
-    // }
+    [TestMethod]
+    public void SetInputNum_ReturnsUserChoice_Int()
+    {
+        int userInput = 3;
+        Pastry newPastry = new Pastry(userInput);
+        int userInput2 = 5;
+        newPastry.InputNum = userInput2;
+        Assert.AreEqual(newPastry.InputNum, userInput2);
+    }
   }
 }
