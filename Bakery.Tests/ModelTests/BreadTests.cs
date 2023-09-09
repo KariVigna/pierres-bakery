@@ -22,7 +22,18 @@ namespace Bakery.Tests
         int userInput = 3;
         Bread newBread = new Bread(userInput);
         Assert.AreEqual(newBread.InputNum, userInput);
-
     }
+
+    [TestMethod]
+    public void SetInputNum_ReturnsUserChoice_Int()
+    {
+        int userInput = 3;
+        Bread newBread = new Bread(userInput);
+        int userInput2 = 5;
+        newBread.InputNum = userInput2;
+        Assert.AreEqual(newBread.InputNum, userInput2);
+    }
+    
+
   }
 }
