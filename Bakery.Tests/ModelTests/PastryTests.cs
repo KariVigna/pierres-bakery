@@ -22,5 +22,12 @@ namespace Bakery.Tests
         Pastry newPastry = new Pastry(4);
         Assert.AreEqual(newPastry.CalculatePastryCost(4), 6);
     }
+
+        [TestMethod]
+    public void CalculatePastryCostWithoutDiscount_ReturnsBreadCost_Int()
+    {
+        Pastry newPastry = new Pastry(1);
+        Assert.AreEqual(newPastry.CalculatePastryCost(1), 2);
+    }
   }
 }
