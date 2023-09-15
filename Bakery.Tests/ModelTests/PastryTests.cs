@@ -17,21 +17,10 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetInputNum_ReturnsUserChoice_Int()
+    public void CalculatePastryCostWithDiscount_ReturnsBreadCost_Int()
     {
-        int userInput = 3;
-        Pastry newPastry = new Pastry(userInput);
-        Assert.AreEqual(newPastry.InputNum, userInput);
-    }
-
-    [TestMethod]
-    public void SetInputNum_ReturnsUserChoice_Int()
-    {
-        int userInput = 3;
-        Pastry newPastry = new Pastry(userInput);
-        int userInput2 = 5;
-        newPastry.InputNum = userInput2;
-        Assert.AreEqual(newPastry.InputNum, userInput2);
+        Pastry newPastry = new Pastry(4);
+        Assert.AreEqual(newPastry.CalculatePastryCost(4), 6);
     }
   }
 }
