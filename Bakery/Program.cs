@@ -15,8 +15,9 @@ namespace Bakery
       Console.WriteLine("Lovely! Our pastries are $2 each and when you buy 3, the 4th will be free! How many pastries would you like?");
       int pastryAmt = int.Parse(Console.ReadLine());
       Pastry newPastry = new Pastry(pastryAmt);
-      Console.WriteLine("Yummy! You ordered " + breadAmt.ToString() + " loafs of bread and " + pastryAmt.ToString() + " pastries!");
-      Console.WriteLine("Your total will be $" + newBread.CalculateBreadCost(breadAmt) + newPastry.CalculatePastryCost(pastryAmt));
+      Console.WriteLine("Yummy! You ordered " + breadAmt.ToString() + " loaves of bread and " + pastryAmt.ToString() + " pastries!");
+      int grandTotal = newBread.CalculateBreadCost(breadAmt) + newPastry.CalculatePastryCost(pastryAmt);
+      Console.WriteLine("Your total will be $" + grandTotal);
     }
   }
 }
